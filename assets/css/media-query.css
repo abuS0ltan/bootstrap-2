@@ -1,0 +1,161 @@
+:root{
+    --first-color:rgb(255, 114, 76);
+    --first-color-overlay:rgb(255, 114, 76,.85);
+    --secound-color:rgb(78, 78, 78);
+    --h-color:rgb(59, 59, 59);
+    --text1-color:rgb(129, 129, 129);
+    font-family: 'Roboto', sans-serif;
+    --white:#f3f3f3;
+    --thierd-color:rgb(49, 51, 53);
+    --new-coler: rgb(33,37,41);
+    --about-color: rgb(78 78 78);
+    --navtap:rgb(95 95 95);
+}
+@media (max-width: 576px) { 
+    .portfolio .container, .resume .container ,.testimonials .container ,.contact .container ,.map .container ,.footer .container{
+        padding: 0 1rem;
+    }
+    /* start nav */
+    .navbar .nav-link{
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+    .Hire-btn{
+        margin-left: 1rem;
+    }
+    .navbar-nav .show > .nav-link, .navbar-nav .nav-link.active:after{
+        background-color: transparent;
+        border-style: solid ;
+        border-color: var(--first-color) ;
+        border-width: .1rem ;
+    }
+    .nav-link:after{
+        background-color: transparent;
+        border-style: solid ;
+        border-color: var(--first-color) ;
+        border-width: 0rem ;  
+        width: 0px;
+    }
+    .nav-link:hover:after{
+        border-width: .1rem;
+        width: 100%;
+    }
+    /* end nav */
+    /* start header */
+    /* start header */
+.vh-100.header{
+    background-position: -30.2rem 0px;  
+    height: 75vh !important
+}
+.header-content{
+    justify-content: end;
+}
+.hello{
+    font-size: 1.7rem;
+}
+.header-titel{
+    font-size: 4.5rem;
+    text-align: right;
+}
+.header-sub-titel{
+    font-size: 1rem;
+    text-align: right;
+}
+/* end header */
+    /* end header */
+    /* start about */
+    .left-div::before,.left-div::after{
+        display: none;
+    }
+    .row.up .col-md-6, .row.down .col-md-6{
+        padding: 1.5rem;
+    }
+    .left-div{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .left-div .item{
+        font-size: 1.4rem;
+    }
+    .right-div{
+        padding-bottom: 2rem;
+    }
+    /* end about */
+    /* start portfolio */
+    .portfolio .sub-titel,.testimonials .sub-titel{
+        font-size: 2.5rem;
+    }
+    /* end portfolio */
+    /* start resume */
+     .resume .resume-items{
+        margin-left: .5rem;
+        margin-right: .5rem;
+     }
+     .value, .resume-item .item:nth-child(2) .item-titel-flex .value {
+        margin-left: 10%;
+    }
+    .value, .resume-item .item:nth-child(3) .item-titel-flex .value {
+        margin-left: 10%;
+    }
+    .value, .resume-item .item:nth-child(4) .item-titel-flex .value {
+        margin-left: 15%;
+    }
+    .value, .resume-item .item:nth-child(5) .item-titel-flex .value {
+        margin-left: 0%;
+    }
+    /* end resume */
+    /*  */
+    .brand img{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
+    }
+    .testimonials .brand{
+        background-position: -80rem -0px;
+    }
+    .testimonials .brand .container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    /* strat contact */
+    .contact{
+        background-position: -35rem 0px;
+    }
+    /* end .contact */
+    /* strat map */
+    .communication-item{
+        padding: 1rem 1rem ;
+    }
+    .map .container{
+        left: 1px;
+        right: 1px;
+        padding: 0;
+        width: 100%;
+        font-size: .7rem;
+        line-height: .7rem;
+    }
+    .communication-item .info{
+        line-height: .9rem;
+    }
+    /* end map */
+    /* statr footer */
+    .footer .col-md-4{
+        padding-bottom: .5rem;
+    }
+    /* end footer */
+ }
+ @media (max-height: 580px){
+    .vh-100.header{
+        height: 100vh !important;
+        background-position: -66.2rem 0px;
+        }
+ }
+@media (min-width: 576px) and (max-width: 992px) { 
+    :root{
+        font-size: 12px;
+    }
+    .vh-100.header{
+        background-position: -30rem 0px;  
+    }
+ }
